@@ -1,0 +1,18 @@
+valgrind -s --leak-check=yes ./asgn6 county_demographics.csv three.ops
+==1955== Memcheck, a memory error detector
+==1955== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1955== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1955== Command: ./asgn6 county_demographics.csv three.ops
+==1955== 
+county_demographics.csv, three.ops
+number of entries processed: 3143
+Filter: Ethnicities.Native Hawaiian and Other Pacific Islander Alone ge 40.000000 (1 entries)
+2014 Income.Persons Below Poverty Level percentage: 14.700000
+==1955== 
+==1955== HEAP SUMMARY:
+==1955==     in use at exit: 0 bytes in 0 blocks
+==1955==   total heap usage: 6,394 allocs, 6,394 frees, 1,557,230 bytes allocated
+==1955== 
+==1955== All heap blocks were freed -- no leaks are possible
+==1955== 
+==1955== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
